@@ -1,0 +1,287 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="https://service-online.su/text/text-editor/ckeditor-full/contents.css">
+<style>body { font-family: Arial,Helvetica Neue,sans-serif; }</style>
+</head>
+<body class="cke_contents_ltr"><p><code>&lt;!DOCTYPE html&gt;</code></p>
+
+<p>2<code>&lt;html lang=&quot;ru&quot;&gt;</code></p>
+
+<p>3<code>&lt;head&gt;</code></p>
+
+<p>4<code>&lt;meta charset=&quot;UTF-8&quot; /&gt;</code></p>
+
+<p>5<code>&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot; /&gt;</code></p>
+
+<p>6<code>&lt;title&gt;Калькулятор Дениса для расчета тепловых потерь&lt;/title&gt;</code></p>
+
+<p>7<code>&lt;style&gt;</code></p>
+
+<p>8<code> body {</code></p>
+
+<p>9<code> font-family: Arial, sans-serif;</code></p>
+
+<p>10<code> margin: 20px; padding: 20px;</code></p>
+
+<p>11<code> background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);</code></p>
+
+<p>12<code> color: #fafafa;</code></p>
+
+<p>13<code> border-radius: 10px;</code></p>
+
+<p>14<code> max-width: 600px;</code></p>
+
+<p>15<code> margin-left: auto;</code></p>
+
+<p>16<code> margin-right: auto;</code></p>
+
+<p>17<code> box-shadow: 0 8px 20px rgba(37,117,252,0.4);</code></p>
+
+<p><code>18 }</code></p>
+
+<p>19<code> h1 {</code></p>
+
+<p>20<code> text-align: center;</code></p>
+
+<p>21<code> margin-bottom: 30px;</code></p>
+
+<p>22<code> font-weight: 700;</code></p>
+
+<p>23<code> font-size: 2.5em;</code></p>
+
+<p>24<code> letter-spacing: 1.5px;</code></p>
+
+<p>25<code> text-shadow: 0 2px 5px rgba(0,0,0,0.3);</code></p>
+
+<p>26<code> }</code></p>
+
+<p>27<code> label {</code></p>
+
+<p>28<code> display: block;</code></p>
+
+<p>29<code> margin: 15px 0 6px;</code></p>
+
+<p>30<code> font-weight: 600;</code></p>
+
+<p>31<code> font-size: 1.1em;</code></p>
+
+<p>32<code> }</code></p>
+
+<p>33<code> input {</code></p>
+
+<p>34<code> width: 100%;</code></p>
+
+<p>35<code> padding: 12px 15px;</code></p>
+
+<p>36<code> border-radius: 8px;</code></p>
+
+<p>37<code> border: none;</code></p>
+
+<p>38<code> font-size: 1em;</code></p>
+
+<p>39<code> box-sizing: border-box;</code></p>
+
+<p>40<code> transition: box-shadow 0.3s ease;</code></p>
+
+<p>41<code> }</code></p>
+
+<p>42<code> input:focus {</code></p>
+
+<p>43<code> outline: none;</code></p>
+
+<p>44<code> box-shadow: 0 0 8px #2575fc;</code></p>
+
+<p>45<code> }</code></p>
+
+<p>46<code> button {</code></p>
+
+<p>47<code> margin-top: 25px;</code></p>
+
+<p>48<code> width: 100%;</code></p>
+
+<p>49<code> background-color: #ff7f50;</code></p>
+
+<p>50<code> color: white;</code></p>
+
+<p>51<code> padding: 15px;</code></p>
+
+<p>52<code> font-size: 1.3em;</code></p>
+
+<p>53<code> border: none;</code></p>
+
+<p>54<code> border-radius: 10px;</code></p>
+
+<p>55<code> font-weight: 700;</code></p>
+
+<p>56<code> cursor: pointer;</code></p>
+
+<p>57<code> box-shadow: 0 5px 15px rgba(255,127,80,0.6);</code></p>
+
+<p>58<code> transition: background-color 0.3s ease;</code></p>
+
+<p><code>59 }</code></p>
+
+<p>60<code> button:hover {</code></p>
+
+<p>61<code> background-color: #ff6347;</code></p>
+
+<p>62<code> }</code></p>
+
+<p>63<code> .result {</code></p>
+
+<p>64<code> margin-top: 30px;</code></p>
+
+<p>65<code> background: rgba(255, 255, 255, 0.15);</code></p>
+
+<p>66<code> padding: 20px;</code></p>
+
+<p>67<code> border-radius: 12px;</code></p>
+
+<p>68<code> font-size: 1.2em;</code></p>
+
+<p>69<code> font-weight: 600;</code></p>
+
+<p>70<code> box-shadow: 0 4px 10px rgba(0,0,0,0.15);</code></p>
+
+<p>71<code> }</code></p>
+
+<p>72<code>&lt;/style&gt;</code></p>
+
+<p>73<code>&lt;/head&gt;</code></p>
+
+<p>74<code>&lt;body&gt;</code></p>
+
+<p>75</p>
+
+<p>76<code>&lt;h1&gt;Калькулятор Дениса для расчета тепловых потерь&lt;/h1&gt;</code></p>
+
+<p><code>&lt;label for=&quot;volume&quot;&gt;Объем воздуха, теряемого при открытии двери (м&sup3;):&lt;/label&gt;</code></p>
+
+<p>79<code>&lt;input type=&quot;number&quot; id=&quot;volume&quot; min=&quot;0&quot; step=&quot;any&quot; placeholder=&quot;например, 2.5&quot; required /&gt;</code></p>
+
+<p>80</p>
+
+<p>81<code>&lt;label for=&quot;tempInside&quot;&gt;Температура внутри (&deg;C):&lt;/label&gt;</code></p>
+
+<p>82<code>&lt;input type=&quot;number&quot; id=&quot;tempInside&quot; placeholder=&quot;например, 20&quot; required /&gt;</code></p>
+
+<p>83</p>
+
+<p>84<code>&lt;label for=&quot;tempOutside&quot;&gt;Температура на улице (&deg;C):&lt;/label&gt;</code></p>
+
+<p>85<code>&lt;input type=&quot;number&quot; id=&quot;tempOutside&quot; placeholder=&quot;например, -5&quot; required /&gt;</code></p>
+
+<p>86</p>
+
+<p>87<code>&lt;label for=&quot;openings&quot;&gt;Количество открытий двери в день:&lt;/label&gt;</code></p>
+
+<p>88<code>&lt;input type=&quot;number&quot; id=&quot;openings&quot; min=&quot;0&quot; step=&quot;1&quot; placeholder=&quot;например, 50&quot; required /&gt;</code></p>
+
+<p>89</p>
+
+<p>90<code>&lt;label for=&quot;tariff&quot;&gt;Стоимость 1 м&sup3; природного газа (руб.):&lt;/label&gt;</code></p>
+
+<p>91<code>&lt;input type=&quot;number&quot; id=&quot;tariff&quot; min=&quot;0&quot; step=&quot;any&quot; placeholder=&quot;например, 6.5&quot; required /&gt;</code></p>
+
+<p>92</p>
+
+<p>93<code>&lt;button onclick=&quot;calculateGasLoss()&quot;&gt;Рассчитать&lt;/button&gt;</code></p>
+
+<p>94</p>
+
+<p>95<code>&lt;div class=&quot;result&quot; id=&quot;result&quot; style=&quot;display:none;&quot;&gt;&lt;/div&gt;</code></p>
+
+<p><code>97 &lt;script&gt;</code></p>
+
+<p>98<code> function calculateGasLoss() {</code></p>
+
+<p>99<code> const V = parseFloat(document.getElementById(&#39;volume&#39;).value);</code></p>
+
+<p>100<code> const tempInside = parseFloat(document.getElementById(&#39;tempInside&#39;).value);</code></p>
+
+<p>101<code> const tempOutside = parseFloat(document.getElementById(&#39;tempOutside&#39;).value);</code></p>
+
+<p>102<code> const openings = parseInt(document.getElementById(&#39;openings&#39;).value);</code></p>
+
+<p>103<code> const tariff = parseFloat(document.getElementById(&#39;tariff&#39;).value);</code></p>
+
+<p>104</p>
+
+<p>105<code> if (isNaN(V) || V &lt; 0 ||</code></p>
+
+<p>106<code> isNaN(tempInside) ||</code></p>
+
+<p>107<code> isNaN(tempOutside) ||</code></p>
+
+<p>108<code> isNaN(openings) || openings &lt; 0 ||</code></p>
+
+<p>109<code> isNaN(tariff) || tariff &lt; 0) {</code></p>
+
+<p>110<code> alert(&#39;Пожалуйста, заполните все поля корректными значениями!&#39;);</code></p>
+
+<p>111<code> return;</code></p>
+
+<p>112<code> }</code></p>
+
+<p>113</p>
+
+<p>114<code> const deltaT = tempInside - tempOutside;</code></p>
+
+<p>115<code> if (deltaT &lt;= 0) {</code></p>
+
+<p>116<code> alert(&#39;Температура внутри должна быть больше температуры снаружи!&#39;);</code></p>
+
+<p>117<code> return;</code></p>
+
+<p><code>118 }</code></p>
+
+<p>119</p>
+
+<p>120<code> const rho = 1.225; // кг/м&sup3;</code></p>
+
+<p>121<code> const c = 1005; // Дж/(кг&middot;&deg;C)</code></p>
+
+<p>122</p>
+
+<p>123<code> const energyPerOpen = V * rho * c * deltaT;</code></p>
+
+<p>124<code> const totalEnergy = energyPerOpen * openings;</code></p>
+
+<p>125<code> const totalKWh = totalEnergy / 3600000;</code></p>
+
+<p>126<code> const gasConsumed = totalKWh * 0.095;</code></p>
+
+<p>127<code> const cost = gasConsumed * tariff;</code></p>
+
+<p>128</p>
+
+<p>129<code> const resultDiv = document.getElementById(&#39;result&#39;);</code></p>
+
+<p>130<code> resultDiv.style.display = &#39;block&#39;;</code></p>
+
+<p>131<code> resultDiv.innerHTML = `</code></p>
+
+<p>132<code> &lt;h2&gt;Результаты расчета:&lt;/h2&gt;</code></p>
+
+<p>133<code> &lt;p&gt;Объем природного газа, необходимого для компенсации тепловых потерь: &lt;strong&gt;${gasConsumed.toFixed(2)}&lt;/strong&gt; м&sup3;&lt;/p&gt;</code></p>
+
+<p>134<code> &lt;p&gt;Стоимость тепловых потерь при открывании дверей: &lt;strong&gt;${cost.toFixed(2)}&lt;/strong&gt; рублей&lt;/p&gt;</code></p>
+
+<p>135<code> `;</code></p>
+
+<p>136<code> }</code></p>
+
+<p>137<code>&lt;/script&gt;</code></p>
+
+<p>138</p>
+
+<p>139<code>&lt;/body&gt;</code></p>
+
+<p>140<code>&lt;/html&gt;</code></p>
+
+<p>&nbsp;</p>
+
+</body>
+</html>
